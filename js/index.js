@@ -63,72 +63,72 @@ let lastText = document.createTextNode('Last');
 last.appendChild(lastText);
 document.querySelector('nav').appendChild(last);
 
-services.textContent = 'Services';
-product.textContent = 'Product';
-vision.textContent = 'Vision';
-features.textContent = 'Features';
-about.textContent = 'About';
-contact.textContent = 'Contact';
+services.textContent = siteContent.nav["nav-item-1"];
+product.textContent = siteContent.nav["nav-item-2"];
+vision.textContent = siteContent.nav["nav-item-3"];
+features.textContent = siteContent.nav["nav-item-4"];
+about.textContent = siteContent.nav["nav-item-5"];
+contact.textContent = siteContent.nav["nav-item-6"];
 
 // header content
 let headerImg = document.getElementById("cta-img");
 headerImg.setAttribute('src', 'img/header-img.png');
 
-let headerH1 = document.querySelector('.cta-text h1')
-headerH1.textContent = 'DOM is awesome';
+let headerH1 = document.querySelector('.cta-text h1');
+headerH1.textContent = siteContent.cta["h1"];
 
 let headerBtn = document.querySelector('.cta-text button')
-headerBtn.textContent = 'Get started!';
+headerBtn.textContent = siteContent.cta["button"];
 headerBtn.addEventListener("click", () => document.querySelector(".cta-text h1").innerHTML = "changed");
 
 // top content
 let featuresH4 = document.querySelector('.top-content .text-content:nth-child(1) h4');
-featuresH4.textContent = 'Features';
+featuresH4.textContent = siteContent["main-content"]["features-h4"];
 let featuresP = document.querySelector('.top-content .text-content:nth-child(1) p');
-featuresP.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+featuresP.textContent = siteContent["main-content"]["features-content"];
 
 let aboutH4 = document.querySelector('.top-content .text-content:nth-child(2) h4');
-aboutH4.textContent = 'About';
+aboutH4.textContent = siteContent["main-content"]["about-h4"];
 let aboutP = document.querySelector('.top-content .text-content:nth-child(2) p');
-aboutP.textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+aboutP.textContent = siteContent['main-content']['features-content'];
 
 // middle banner 
 let midImg = document.getElementById("middle-img");
-midImg.setAttribute('src', 'img/mid-page-accent.jpg');
+midImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 // bottom content
 let sercivesH4 = document.querySelector('.bottom-content .text-content:nth-child(1) h4');
-sercivesH4.textContent = 'Services';
+sercivesH4.textContent = siteContent['main-content']['services-h4']
 let servicesP = document.querySelector('.bottom-content .text-content:nth-child(1) p');
-servicesP.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+servicesP.textContent = siteContent['main-content']['features-content']
 
 let productH4 = document.querySelector('.bottom-content .text-content:nth-child(2) h4');
-productH4.textContent = 'Product';
+productH4.textContent = siteContent['main-content']['product-h4']
 let productP = document.querySelector('.bottom-content .text-content:nth-child(2) p');
-productP.textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+productP.textContent = siteContent['main-content']['product-content']
 
 let visionH4 = document.querySelector('.bottom-content .text-content:nth-child(3) h4');
-visionH4.textContent = 'Vision';
+visionH4.textContent = siteContent['main-content']['vision-h4']
 let visionP = document.querySelector('.bottom-content .text-content:nth-child(3) p');
-visionP.textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+visionP.textContent = siteContent['main-content']['vision-content'];
 
 //contact
 let contactP = document.querySelectorAll('.contact p')
 contactP[0].style.width = "20%";
 
 let contactH4 = document.querySelector('.contact h4');
-contactH4.textContent = 'Contact';
+contactH4.textContent = siteContent['contact']['contact-h4']
 
 let contactP2 = document.querySelector('.contact p:nth-child(2)');
-contactP2.textContent = '123 Way 456 Street Somewhere, USA';
+contactP2.textContent = siteContent['contact']['address'];
 
 let contactP3 = document.querySelector('.contact p:nth-child(3)');
-contactP3.textContent = '1 (888) 888-8888';
+contactP3.textContent = siteContent['contact']['phone'];
 
 let contactP4 = document.querySelector('.contact p:nth-child(4)');
-contactP4.textContent = 'sales@greatidea.io';
+contactP4.textContent = siteContent['contact']['email']
 
 //footer
 let copyright = document.querySelector('footer p');
-copyright.textContent = 'Copyright Great Idea! 2018';
+copyright.textContent = siteContent['footer']['copyright'];
 
